@@ -50,7 +50,7 @@ spec:
         template: qulacs-test
         arguments:
           parameters:
-          - angle: '0.5'
+          - angle: 0.5
           - resources: [z-quantum-core, qulacs-t]
           - docker-image: z-quantum-default
           - docker-tag: latest
