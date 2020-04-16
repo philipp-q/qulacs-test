@@ -1,7 +1,7 @@
 from qulacs import Observable, QuantumCircuit, QuantumState
 from qulacs.gate import Y,CNOT,merge
 
-def qtest(angle):
+def qtest(float angle):
     state = QuantumState(3)
     state.set_Haar_random_state()
     circuit = QuantumCircuit(3)
