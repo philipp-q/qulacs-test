@@ -12,4 +12,8 @@ qulacs-test-mqzvm (failed)
 
 qulacs-test-tsdgq (worked!)
 
-qulacs-test-s98z5 (without z-quantum-core)
+qulacs-test-s98z5 (failed)
+
+qulacs-test-p67mt } without z-quantum-core
+                  }
+qulacs-test-qspn8 } just to test consistency

@@ -13,11 +13,6 @@ resources:
   parameters:
     url: "git@github.com:philipp-q/qulacs-test.git"
     branch: "master"
-#- name: z-quantum-core
-#  type: git
-#  parameters:
-#    url: "git@github.com:zapatacomputing/z-quantum-core.git"
-#    branch: "master"
 
 # Data to help you easily work with your workflow
 metadata:
@@ -52,6 +47,5 @@ spec:
           parameters:
           - angle: '0.5'
           - resources: [qulacs-t]
-          #- resources: [z-quantum-core, qulacs-t]
           - docker-image: z-quantum-default
           - docker-tag: latest
