@@ -1,0 +1,27 @@
+spec:
+  templates:
+
+  # Try to run qulacs as first try to merge Orquestra with Tequila
+  - name: qulacs-test
+    parent: generic-task
+    inputs:
+      parameters:
+              - name: angle
+              - name: command
+              value: python3 main_script.py
+      artifacts:
+      - name: main-script
+        path: /app/main_script.py
+        raw:
+          data: |
+            import json
+            from qulacstest import qtest
+            out = qtest('{{inputs.parameters.angle}}')
+            
+            out['schema'] = "qulacs-test"
+            with open('output.json', 'w') as f:
+              f.write(json.dumps(out))
+    outputs:
+      artifacts:
+      - name: out 
+        path: /app/output.json
