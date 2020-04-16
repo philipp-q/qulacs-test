@@ -13,7 +13,7 @@ def qtest(angle):
     observable = Observable(3)
     observable.add_operator(2.0, "X 2 Y 1 Z 0")
     observable.add_operator(-3.0, "Z 2")
-    value = observable.get_expectation_value(state)
+    result = observable.get_expectation_value(state)
     
-    # print(value)
-    return(value)
+    output = {'energy:' result}
+    return(output)
